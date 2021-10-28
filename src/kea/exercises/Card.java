@@ -12,6 +12,7 @@ public class Card {
 
     public int getSuitRank() {
         return suit.getRank();
+        //comment
     }
 
     public boolean beats(Card anotherCard) {

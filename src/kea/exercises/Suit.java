@@ -1,6 +1,6 @@
 package kea.exercises;
 
-public enum Suit {
+enum Suit {
 
     HEART(3, " of hearts"),
     DIAMOND(2, " of diamonds"),
@@ -15,15 +15,15 @@ public enum Suit {
         this.description = description;
     }
 
-    public int getRank() {
+    int getRank() {
         return this.rank;
     }
 
-    public String getDescription() {
+    String getDescription() {
         return this.description;
     }
 
-    public static Suit getRandomSuit() {
+    static Suit getRandomSuit() {
         // values() returns an array containing the constants of Suit
         return values()[(int) (Math.random() * values().length)];
     }
